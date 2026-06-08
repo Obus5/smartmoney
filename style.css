@@ -701,3 +701,71 @@ nav{
     }
 
 }
+@media (max-width:768px){
+
+    .hero{
+        grid-template-columns:1fr;
+        gap:30px;
+        padding:20px;
+    }
+
+    .hero-left h1{
+        font-size:42px;
+    }
+
+    .hero-left p{
+        font-size:18px;
+    }
+
+    nav{
+        width:95%;
+        padding:15px 20px;
+    }
+
+    .menu{
+        gap:10px;
+    }
+
+    .menu a{
+        font-size:14px;
+        padding:10px 14px;
+    }
+
+    .market-card{
+        width:100%;
+    }
+
+    .ihsg-info{
+        grid-template-columns:1fr 1fr;
+    }
+
+    #stockContainer{
+        justify-content:center;
+    }
+
+    .card{
+        width:100%;
+        max-width:350px;
+    }
+
+}
+/* ===================================
+   HANDPHONE Scaner
+=================================== */
+@media (max-width:768px){
+
+    .table-wrapper{
+        overflow-x:auto;
+    }
+
+}
+/* ===================================
+   HANDPHONE TA
+=================================== */
+@media (max-width:768px){
+
+    .chart-grid{
+        grid-template-columns:1fr;
+    }
+
+}
