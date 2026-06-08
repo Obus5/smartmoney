@@ -92,10 +92,17 @@ nav{
     font-weight:bold;
     color:#00d26a;
 }
+@media (max-width:768px){
 
-.menu{
-    display:flex;
-    gap:40px;
+    .menu{
+        gap:8px;
+    }
+
+    .menu a{
+        padding:8px 12px;
+        font-size:13px;
+    }
+
 }
 
 .menu a{
@@ -109,16 +116,12 @@ nav{
 .menu a:hover{
     color:#00d26a;
 }
-.hero-left h1{
-    font-size:72px;
+@media (max-width:768px){
 
-    line-height:1.1;
+    .hero-left h1{
+        font-size:38px;
+    }
 
-    font-weight:800;
-
-    max-width:800px;
-
-    margin-bottom:25px;
 }
 
 .hero-left p{
@@ -163,16 +166,12 @@ nav{
     box-shadow:0 10px 25px rgba(0,210,106,.3);
 }
 
-.hero{
-    display:grid;
+@media (max-width:768px){
 
-    grid-template-columns: 1fr 600px;
+    .hero{
+        grid-template-columns:1fr;
+    }
 
-    gap:40px;
-
-    padding: 30px 8% 60px;
-
-    align-items:start;
 }
 
 .update-time{
@@ -409,10 +408,8 @@ nav{
 }
 
 .chart-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
-    gap:25px;
-    margin-top:30px;
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
 }
 @media(max-width:768px){
 
@@ -640,13 +637,16 @@ nav{
     text-align:center;
 }
 
-.sponsor-grid{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:150px;
-    margin-top:50px;
-    flex-wrap:wrap;
+@media (max-width:768px){
+
+    .sponsor-grid{
+        gap:30px;
+    }
+
+    .sponsor-grid img{
+        height:70px;
+    }
+
 }
 
 .sponsor-grid img{
@@ -745,8 +745,11 @@ nav{
 
     .card{
         width:100%;
-        max-width:350px;
+        max-width:300px;
     }
+   #stockContainer{
+    justify-content:center;
+}
 
 }
 /* ===================================
@@ -766,6 +769,13 @@ nav{
 
     .chart-grid{
         grid-template-columns:1fr;
+    }
+
+}
+@media (max-width:768px){
+
+    .hero-left p{
+        font-size:16px;
     }
 
 }
